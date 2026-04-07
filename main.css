@@ -1,0 +1,246 @@
+:root {
+    --primary-color: #2563eb;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --bg-code: #0f172a;
+    --bg-table-header: #f8fafc;
+    --border-color: #e2e8f0;
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    /* Variables specific to quickstart.html */
+    --accent-bg: #eff6ff;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0f172a;
+    color: #f8fafc;
+}
+
+.glass {
+    background: rgba(30, 41, 59, 0.7);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.indigo-gradient {
+    background: linear-gradient(135deg, #6366f1 0%, #4338ca 100%);
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+code {
+    color: #e11d48;
+    background: #1e293b;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+/* Documentation Preview */
+
+.pb-documentation-body {
+    font-family: var(--font-sans);
+    line-height: 1.6;
+    color: var(--text-main);
+    max-width: 850px; /* Consistent with quickstart.html and api2.html */
+    margin: 20px; /* Consistent with quickstart.html and api2.html */
+    padding: 40px;
+    background-color: #ffffff;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+/* Professional Version Tag */
+.version-tag {
+    display: inline-block;
+    background: #dbeafe;
+    color: var(--primary-color);
+    padding: 4px 12px;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+/* Doc Type Tag (from quickstart.html) */
+.doc-type-tag {
+    display: inline-block;
+    background: var(--accent-bg);
+    color: var(--primary-color);
+    padding: 4px 12px;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.pb-h1 {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.025em;
+}
+
+.pb-h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0f172a;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 8px;
+    margin-top: 2.5rem;
+}
+
+.pb-h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-top: 1.5rem;
+}
+/* Specific h3 style for quickstart.html */
+.pb-h3-qs {
+    font-size: 1.25rem;
+    font-weight: 700; /* Different from pb-h3 */
+    color: var(--text-main); /* Different from pb-h3 */
+    margin-top: 2rem; /* Different from pb-h3 */
+    margin-bottom: 0.5rem;
+}
+
+.pb-h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: 0.5rem;
+}
+
+.pb-p {
+    margin-bottom: 1.25rem;
+    color: #334155;
+}
+
+.pb-hr {
+    border: 0;
+    border-top: 1px solid var(--border-color);
+    margin: 1.5rem 0;
+}
+
+/* Modern Table Styling */
+.pb-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 0.95rem;
+}
+
+.pb-th {
+    background-color: var(--bg-table-header);
+    color: var(--text-muted);
+    font-weight: 600;
+    text-align: left;
+    padding: 12px;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.pb-td {
+    padding: 12px;
+    border-bottom: 1px solid var(--border-color);
+    vertical-align: top;
+}
+
+.pb-tr-last .pb-td {
+    border-bottom: none;
+}
+
+/* Step List Styling (from quickstart.html) */
+.pb-ol {
+    padding-left: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+.pb-ol-li {
+    margin-bottom: 1rem;
+    padding-left: 0.5rem;
+}
+.pb-ol-li strong {
+    color: var(--primary-color);
+}
+.pb-ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+.pb-ul-li {
+    margin-bottom: 0.25rem;
+    color: var(--text-muted);
+}
+
+/* Professional "Pro Tip" Callout (from quickstart.html) */
+.pb-tip-box {
+    background-color: var(--accent-bg);
+    border-left: 4px solid var(--primary-color);
+    padding: 20px;
+    border-radius: 0 8px 8px 0;
+    margin: 2rem 0;
+}
+.pb-tip-box-heading { /* Specific heading style for inside tip box */
+    margin-top: 0;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+
+/* Code Block Styling */
+.pb-pre {
+    background-color: var(--bg-code);
+    color: #f8fafc;
+    padding: 20px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-family: 'SFMono-Regular', Consolas, monospace;
+    font-size: 0.9rem;
+    margin: 1.5rem 0;
+}
+
+.pb-code {
+    font-family: monospace;
+    background: #f1f5f9;
+    color: #e11d48;
+    padding: 2px 6px; /* Consistent with quickstart.html */
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+.pb-pre .pb-code {
+    background: transparent;
+    color: inherit;
+    padding: 0;
+}
+
+/* Syntax Highlighting Sim */
+.hljs-attr { color: #7dd3fc; }
+.hljs-string { color: #34d399; }
+.hljs-number { color: #fbbf24; }
+
+/* Footer (from quickstart.html) */
+.pb-footer {
+    margin-top: 3rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    text-align: center;
+    border-top: 1px solid var(--border-color);
+    padding-top: 1rem;
+}
+.pb-footer-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
