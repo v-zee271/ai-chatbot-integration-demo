@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #2563eb;
+    --documentation-primary-color: #2563eb;
     --text-main: #1e293b;
     --text-muted: #64748b;
     --bg-code: #0f172a;
@@ -12,7 +12,7 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #0f172a;
+    background-color: var(--bg-code);
     color: #f8fafc;
 }
 
@@ -59,7 +59,7 @@ code {
 .version-tag {
     display: inline-block;
     background: #dbeafe;
-    color: var(--primary-color);
+    color: var(--documentation-primary-color);
     padding: 4px 12px;
     border-radius: 9999px;
     font-size: 0.75rem;
@@ -70,7 +70,7 @@ code {
 .doc-type-tag {
     display: inline-block;
     background: var(--accent-bg);
-    color: var(--primary-color);
+    color: var(--documentation-primary-color);
     padding: 4px 12px;
     border-radius: 9999px;
     font-size: 0.75rem;
@@ -83,7 +83,7 @@ code {
 .pb-h1 {
     font-size: 2.25rem;
     font-weight: 800;
-    color: #0f172a;
+    color: var(--bg-code);
     margin-bottom: 0.5rem;
     letter-spacing: -0.025em;
 }
@@ -91,7 +91,7 @@ code {
 .pb-h2 {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #0f172a;
+    color: var(--bg-code);
     border-bottom: 2px solid var(--border-color);
     padding-bottom: 8px;
     margin-top: 2.5rem;
@@ -100,7 +100,7 @@ code {
 .pb-h3 {
     font-size: 1.25rem;
     font-weight: 600;
-    color: var(--primary-color);
+    color: var(--documentation-primary-color);
     margin-top: 1.5rem;
 }
 /* Specific h3 style for quickstart.html */
@@ -167,7 +167,7 @@ code {
     padding-left: 0.5rem;
 }
 .pb-ol-li strong {
-    color: var(--primary-color);
+    color: var(--documentation-primary-color);
 }
 .pb-ul {
     list-style-type: disc;
@@ -182,14 +182,14 @@ code {
 /* Professional "Pro Tip" Callout (from quickstart.html) */
 .pb-tip-box {
     background-color: var(--accent-bg);
-    border-left: 4px solid var(--primary-color);
+    border-left: 4px solid var(--documentation-primary-color);
     padding: 20px;
     border-radius: 0 8px 8px 0;
     margin: 2rem 0;
 }
 .pb-tip-box-heading { /* Specific heading style for inside tip box */
     margin-top: 0;
-    color: var(--primary-color);
+    color: var(--documentation-primary-color);
     font-size: 1.1rem;
     display: flex;
     align-items: center;
@@ -240,7 +240,7 @@ code {
     padding-top: 1rem;
 }
 .pb-footer-link {
-    color: var(--primary-color);
+    color: var(--documentation-primary-color);
     text-decoration: none;
     font-weight: 500;
 }
