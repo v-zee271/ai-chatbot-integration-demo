@@ -48,7 +48,7 @@ code {
     line-height: 1.6;
     color: var(--text-main);
     max-width: 850px; /* Consistent with quickstart.html and api2.html */
-    margin: 20px; /* Consistent with quickstart.html and api2.html */
+    margin: 20px auto;
     padding: 40px;
     background-color: #ffffff;
     border: 1px solid var(--border-color);
@@ -243,4 +243,23 @@ code {
     color: var(--documentation-primary-color);
     text-decoration: none;
     font-weight: 500;
+}
+
+/* Mobile Responsiveness Improvements */
+@media (max-width: 640px) {
+    .pb-documentation-body {
+        margin: 10px;
+        padding: 24px 16px;
+    }
+
+    .pb-h1 {
+        font-size: 1.75rem;
+    }
+
+    .pb-table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
 }
